@@ -4,3 +4,4 @@ pylint
 black
 ipython
 nbval
+ipdb
