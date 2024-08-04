@@ -3,8 +3,9 @@ install:
 		pip install -r requirements.txt
 
 test:
-	python -m pytest -vv --cov=hello --cov=greeting tests
+	python -m pytest -vv --cov=hello --cov=greeting --cov=web tests
 	python -m pytest --nbval notebook.ipynb
+	python -m pytest -v tests/test_web.py
 
 debug:
 	python -m pytest -vv --pdb
